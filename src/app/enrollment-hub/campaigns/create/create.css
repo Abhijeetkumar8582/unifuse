@@ -920,6 +920,74 @@
   opacity: 0.9;
 }
 
+@media (max-width: 768px) {
+  .create-campaign-main {
+    padding: 16px;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+
+  .page-subtitle {
+    font-size: 14px;
+  }
+
+  .campaign-form {
+    padding: 16px;
+  }
+
+  .form-section {
+    padding: 16px;
+  }
+
+  .channel-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .message-type-selection {
+    flex-direction: column;
+  }
+
+  .message-type-card {
+    width: 100%;
+  }
+
+  .tag-selector {
+    flex-wrap: wrap;
+  }
+
+  .cta-input-group {
+    flex-direction: column;
+  }
+
+  .review-layout {
+    flex-direction: column;
+  }
+
+  .message-preview-panel,
+  .campaign-summary-panel {
+    width: 100%;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cancel-btn,
+  .continue-btn,
+  .send-test-btn,
+  .save-draft-btn,
+  .schedule-campaign-btn {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1024px) {
   .review-content {
     grid-template-columns: 1fr;

@@ -385,19 +385,89 @@
 }
 
 @media (max-width: 768px) {
+  .audit-logs-main {
+    padding: 16px;
+  }
+
+  .audit-logs-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+
+  .page-subtitle {
+    font-size: 14px;
+  }
+
+  .export-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
   .audit-stats {
     grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .audit-stat-card {
+    padding: 16px;
+  }
+
+  .audit-stat-value {
+    font-size: 24px;
   }
 
   .audit-filters {
     grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .time-filters {
+    flex-wrap: wrap;
+  }
+
+  .time-filter-btn {
+    flex: 1;
+    min-width: 60px;
   }
 
   .audit-logs-table-container {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .audit-logs-table {
-    min-width: 800px;
+    min-width: 900px;
+  }
+
+  .audit-pagination {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .audit-logs-main {
+    padding: 12px;
+  }
+
+  .audit-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .audit-stat-card {
+    padding: 12px;
+  }
+
+  .audit-stat-value {
+    font-size: 20px;
+  }
+
+  .audit-filters {
+    padding: 12px;
   }
 }

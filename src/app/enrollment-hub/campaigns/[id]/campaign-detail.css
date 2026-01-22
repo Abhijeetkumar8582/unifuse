@@ -377,6 +377,75 @@
 }
 
 @media (max-width: 768px) {
+  .campaign-detail-main {
+    padding: 16px;
+  }
+
+  .campaign-header-title {
+    font-size: 24px;
+  }
+
+  .campaign-header-actions {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .campaign-header-btn {
+    width: 100%;
+  }
+
+  .campaign-kpis {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .campaign-kpi-card {
+    padding: 16px;
+  }
+
+  .campaign-kpi-value {
+    font-size: 24px;
+  }
+
+  .message-preview-section,
+  .campaign-details-section,
+  .analytics-section {
+    padding: 16px;
+  }
+
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-card {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .campaign-detail-main {
+    padding: 12px;
+  }
+
+  .campaign-header-title {
+    font-size: 20px;
+  }
+
+  .campaign-kpis {
+    grid-template-columns: 1fr;
+  }
+
+  .campaign-kpi-card {
+    padding: 12px;
+  }
+
+  .campaign-kpi-value {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
   .campaign-header {
     flex-direction: column;
   }

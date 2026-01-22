@@ -622,21 +622,116 @@
 }
 
 @media (max-width: 768px) {
+  .settings-main {
+    padding: 16px;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+
+  .page-subtitle {
+    font-size: 14px;
+  }
+
+  .settings-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .settings-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .settings-tab {
+    padding: 10px 16px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .settings-content {
+    max-width: 100%;
+  }
+
   .profile-section {
     flex-direction: column;
+    gap: 20px;
+  }
+
+  .avatar-circle {
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
   }
 
   .team-stats {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .team-stat {
+    padding: 12px;
+  }
+
+  .team-stat-value {
+    font-size: 24px;
   }
 
   .api-key-item {
     flex-direction: column;
     align-items: flex-start;
+    gap: 12px;
   }
 
   .api-key-actions {
     width: 100%;
-    justify-content: flex-start;
+    display: flex;
+    gap: 8px;
+  }
+
+  .api-key-btn {
+    flex: 1;
+  }
+
+  .subscription-actions {
+    flex-direction: column;
+  }
+
+  .subscription-btn {
+    width: 100%;
+  }
+
+  .theme-options {
+    flex-direction: column;
+  }
+
+  .settings-actions {
+    flex-direction: column;
+  }
+
+  .cancel-settings-btn,
+  .save-settings-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .settings-main {
+    padding: 12px;
+  }
+
+  .page-title {
+    font-size: 20px;
+  }
+
+  .settings-card {
+    padding: 12px;
+  }
+
+  .avatar-circle {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
   }
 }

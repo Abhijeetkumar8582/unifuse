@@ -2290,12 +2290,167 @@
 }
 
 @media (max-width: 768px) {
+  .enrollment-hub-main {
+    padding: 16px;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+
+  .page-subtitle {
+    font-size: 14px;
+  }
+
+  .tabs-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .tabs-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab {
+    padding: 10px 16px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .widget-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .widget-card {
+    padding: 16px;
+  }
+
+  .funnel-container {
+    padding: 16px;
+  }
+
+  .campaigns-table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .campaigns-table {
+    min-width: 800px;
+  }
+
+  .conversations-kpis {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .conversation-kpi-card {
+    padding: 16px;
+  }
+
+  .agents-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .agent-card {
+    padding: 16px;
+  }
+
   .doc-processing-kpis {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .doc-quick-actions {
     grid-template-columns: 1fr;
+  }
+
+  .doc-charts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doc-issues-batches-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .batches-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .batches-table table {
+    min-width: 600px;
+  }
+
+  .settings-card {
+    padding: 16px;
+  }
+
+  .settings-form {
+    gap: 16px;
+  }
+
+  .correction-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .team-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .team-table table {
+    min-width: 600px;
+  }
+
+  .integration-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .integration-card-footer {
+    width: 100%;
+  }
+
+  .integration-btn {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .enrollment-hub-main {
+    padding: 12px;
+  }
+
+  .page-title {
+    font-size: 20px;
+  }
+
+  .widget-card {
+    padding: 12px;
+  }
+
+  .campaign-kpis {
+    grid-template-columns: 1fr;
+  }
+
+  .campaign-kpi-card {
+    padding: 12px;
+  }
+
+  .settings-card {
+    padding: 12px;
+  }
+
+  .settings-actions {
+    flex-direction: column;
+  }
+
+  .cancel-settings-btn,
+  .save-settings-btn {
+    width: 100%;
   }
 }
 

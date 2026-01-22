@@ -151,15 +151,15 @@ export default function CampaignDetailPage({ params }) {
               <div className="email-preview">
                 <div className="email-header">
                   <div className="email-subject">
-                    🎉 Welcome to the {{University Name}} Family, {{First Name}}!
+                    🎉 Welcome to the {'{{University Name}}'} Family, {'{{First Name}}'}!
                   </div>
                 </div>
                 <div className="email-body">
-                  <p>Hi {{First Name}},</p>
-                  <p>Congratulations on your admission to {{University Name}}! We're thrilled to welcome you to our community of scholars, innovators, and leaders.</p>
+                  <p>Hi {'{{First Name}}'},</p>
+                  <p>Congratulations on your admission to {'{{University Name}}'}! We're thrilled to welcome you to our community of scholars, innovators, and leaders.</p>
                   <p>Your journey starts now, and we're here to help every step of the way. Here's what you should do next:</p>
                   <ol>
-                    <li>Submit your enrollment deposit by {{Deadline Date}}</li>
+                    <li>Submit your enrollment deposit by {'{{Deadline Date}}'}</li>
                     <li>Complete your housing application</li>
                     <li>Review your financial aid package</li>
                   </ol>

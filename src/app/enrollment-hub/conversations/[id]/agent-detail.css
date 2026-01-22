@@ -525,6 +525,104 @@
 }
 
 @media (max-width: 768px) {
+  .agent-detail-main {
+    padding: 16px;
+  }
+
+  .agent-header-title {
+    font-size: 24px;
+  }
+
+  .agent-header-actions {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .agent-header-btn {
+    width: 100%;
+  }
+
+  .agent-metrics {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .agent-metric-card {
+    padding: 16px;
+  }
+
+  .agent-metric-value {
+    font-size: 24px;
+  }
+
+  .config-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .config-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .config-tab {
+    padding: 10px 16px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .config-section {
+    padding: 16px;
+  }
+
+  .tone-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .channel-settings-card {
+    padding: 16px;
+  }
+
+  .footer-bar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-actions {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+  }
+
+  .footer-btn {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .agent-detail-main {
+    padding: 12px;
+  }
+
+  .agent-header-title {
+    font-size: 20px;
+  }
+
+  .agent-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .agent-metric-card {
+    padding: 12px;
+  }
+
+  .agent-metric-value {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
   .agent-header {
     flex-direction: column;
   }
