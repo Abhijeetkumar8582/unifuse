@@ -1,0 +1,400 @@
+.campaign-detail-main {
+  flex: 1;
+  padding: 32px;
+  overflow-y: auto;
+}
+
+.campaign-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.campaign-title-section {
+  flex: 1;
+}
+
+.campaign-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.campaign-description {
+  font-size: 16px;
+  color: var(--text-gray);
+}
+
+.campaign-actions-header {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.action-btn.secondary {
+  background: var(--card-bg);
+  border: 1px solid var(--border-gray);
+  color: var(--text-dark);
+}
+
+.action-btn.secondary:hover {
+  border-color: var(--primary-blue);
+  background: var(--light-blue-bg);
+}
+
+.action-btn.danger {
+  background: #ef4444;
+  color: white;
+}
+
+.action-btn.danger:hover {
+  opacity: 0.9;
+}
+
+.campaign-status-bar {
+  display: flex;
+  gap: 24px;
+  padding: 16px 20px;
+  background: var(--light-blue-bg);
+  border-radius: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-label {
+  font-size: 13px;
+  color: var(--text-gray);
+  font-weight: 500;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.status-badge.active {
+  background: var(--light-green-bg);
+  color: var(--success-green);
+}
+
+.status-value {
+  font-size: 13px;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.campaign-kpis-detail {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.kpi-card-detail {
+  background: var(--card-bg);
+  border: 1px solid var(--border-gray);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.kpi-label-detail {
+  font-size: 13px;
+  color: var(--text-gray);
+  margin-bottom: 8px;
+}
+
+.kpi-value-detail {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.kpi-change-detail {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.kpi-change-detail.positive {
+  color: var(--success-green);
+}
+
+.kpi-change-detail.negative {
+  color: #ef4444;
+}
+
+.campaign-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.message-preview-card,
+.campaign-details-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-gray);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.email-preview {
+  background: #f9fafb;
+  border: 1px solid var(--border-gray);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.email-header {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.email-subject {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.email-body {
+  font-size: 14px;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.email-body p {
+  margin-bottom: 12px;
+}
+
+.email-body ol {
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.email-body li {
+  margin-bottom: 8px;
+}
+
+.email-cta-button {
+  margin-top: 16px;
+  padding: 12px 24px;
+  background: var(--primary-blue);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-label {
+  font-size: 13px;
+  color: var(--text-gray);
+  font-weight: 500;
+}
+
+.detail-value {
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+.detail-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 4px 12px;
+  background: var(--light-blue-bg);
+  color: var(--primary-blue);
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.analytics-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-gray);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.analytics-card.full-width {
+  grid-column: 1 / -1;
+}
+
+.analytics-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.analytics-table thead {
+  background: var(--light-blue-bg);
+}
+
+.analytics-table th {
+  padding: 12px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dark);
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.analytics-table td {
+  padding: 12px;
+  font-size: 13px;
+  color: var(--text-dark);
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.analytics-table tbody tr:hover {
+  background: var(--light-blue-bg);
+}
+
+.clicks-cell {
+  font-weight: 600;
+  color: var(--primary-blue);
+}
+
+.opt-out-alert {
+  background: #fef3c7;
+  border: 1px solid #fbbf24;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.opt-out-main {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.opt-out-rate {
+  font-size: 13px;
+  color: var(--text-gray);
+}
+
+.opt-out-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.opt-out-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.opt-out-label {
+  font-size: 13px;
+  color: var(--text-gray);
+  font-weight: 500;
+}
+
+.opt-out-value {
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+.chart-placeholder {
+  padding: 48px;
+  text-align: center;
+  background: var(--light-blue-bg);
+  border-radius: 8px;
+  border: 2px dashed var(--border-gray);
+}
+
+.chart-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.chart-placeholder p {
+  font-size: 14px;
+  color: var(--text-gray);
+}
+
+@media (max-width: 1024px) {
+  .campaign-content-grid,
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .campaign-header {
+    flex-direction: column;
+  }
+
+  .campaign-actions-header {
+    width: 100%;
+  }
+
+  .action-btn {
+    flex: 1;
+  }
+
+  .campaign-kpis-detail {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .campaign-status-bar {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

@@ -1,66 +1,83 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client';
 
-export default function Home() {
+import { useRouter } from 'next/navigation';
+import './login.css';
+
+export default function LoginPage() {
+  const router = useRouter();
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="login-container">
+      <div className="login-card">
+        <div className="login-header">
+          <div className="logo-container">
+            <div className="logo-icon">⚡</div>
+            <span className="logo-text">UNIFUSE AI</span>
+          </div>
+          <p className="tagline">AI-Powered Higher Education Platform</p>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+
+        <form className="login-form" onSubmit={(e) => {
+          e.preventDefault();
+          router.push('/dashboard');
+        }}>
+          <div className="form-group">
+            <label htmlFor="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="your.email@university.edu"
+              required
             />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="••••••"
+              required
+            />
+          </div>
+
+          <div className="form-options">
+            <label className="checkbox-label">
+              <input type="checkbox" />
+              <span>Remember me</span>
+            </label>
+            <a href="/forgot-password" className="forgot-link">
+              Forgot password?
+            </a>
+          </div>
+
+          <button type="submit" className="signin-button">
+            Sign In
+          </button>
+        </form>
+
+        <div className="separator">
+          <div className="separator-line"></div>
+          <span>OR CONTINUE WITH</span>
+          <div className="separator-line"></div>
         </div>
-      </main>
+
+        <div className="sso-section">
+          <p className="sso-title">SINGLE SIGN-ON OPTIONS</p>
+          <button className="sso-button">
+            <span className="sso-icon">🔒</span>
+            Sign in with Microsoft
+          </button>
+          <button className="sso-button">
+            <span className="sso-icon">🔒</span>
+            Sign in with Google Workspace
+          </button>
+        </div>
+
+        <p className="footer-link">
+          Don't have an account? <a href="#">Contact your administrator</a>
+        </p>
+      </div>
     </div>
   );
 }
